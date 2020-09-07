@@ -8,6 +8,6 @@
         /// <summary>
         /// The base address of the current API version.
         /// </summary>
-        public const string BaseAddress = "api/answers/";
+        public const string BaseAddress = "api/answers";
     }
 }

@@ -25,6 +25,9 @@ namespace TestAPIs.Services
             {
                 var products = await _wooliesXClient.GetAsync<List<Product>>("products");
 
+                if (string.IsNullOrEmpty(sortOption))
+                    return products;
+
                 switch (sortOption.Trim())
                 {
                     case "Low":

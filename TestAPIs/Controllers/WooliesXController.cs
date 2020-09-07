@@ -43,7 +43,7 @@ namespace TestAPIs.Controllers
 
         [HttpGet]
         [Route("sort")]
-        public async Task<IActionResult> GetSortedProducts([FromQuery, Required] string sortOption)
+        public async Task<IActionResult> GetSortedProducts([FromQuery] string sortOption)
         {
             var products = await _productService.GetProductsAsync(sortOption);
 
