@@ -22,6 +22,8 @@ namespace TestAPIs
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            services.AddLogging();
             services.Configure<WooliesXSetting>(options => Configuration.GetSection("WooliesXSetting").Bind(options));
 
             services.AddScoped<ISettingService, SettingService>();
