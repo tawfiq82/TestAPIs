@@ -3,3 +3,9 @@
 ################################################################################
 
 /TestProject/bin
+/TestProject/obj
+/.vs/TestAPIs
+/TestAPIs/bin
+/TestAPIs/obj
+/TestAPIs/Properties/PublishProfiles
+/TestAPIs/TestAPIs.csproj.user
